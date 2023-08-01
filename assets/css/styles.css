@@ -1,0 +1,62 @@
+*{
+    font-family: "Arial", cursive, sans-serif;
+}
+:root{
+    --dark: rgb(112, 112, 117);
+}
+h1{
+    text-align:center;
+}
+header{
+    color:black;
+    background-color: rgb(187, 190, 190);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align:end;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    
+}
+.content{
+    margin-top: 305px;
+    border: solid 3px black;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+.content h2{
+    text-align: center;;
+}
+.about{
+    text-align:center;
+
+}
+.workpreview{
+    height:200px;
+    width: 200px;
+    border: solid grey 3px;
+    width: 24%;
+}
+.link{
+font-size: 20px;
+display: inline;
+}
+.contact{
+    font-size: 15px;
+    font-weight:bold;
+    display:inline;
+}
+.link:hover{
+    box-shadow: inset 0px 0px 8px var(--dark), 0 0 15px var(--dark);
+}
+.workpreview:hover{
+    box-shadow: inset 0px 0px 8px var(--dark), 0 0 15px var(--dark);
+}
+.banner{
+    width: 100%;
+}
