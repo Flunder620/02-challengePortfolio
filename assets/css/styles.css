@@ -1,6 +1,10 @@
 *{
     font-family: "Arial", cursive, sans-serif;
 }
+/* Makes scrolling smooth and not snappy, found online */
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --dark: rgb(112, 112, 117);
 }
@@ -50,6 +54,7 @@ body h2, p{
     background:url("../calculator.png");
     background-size: cover;
     background-position: center;
+    width: 500px;
 }
 #clock{
     background:url("../clock.png");
@@ -106,5 +111,14 @@ display: inline;
 }
 .content-title{
     background-color: rgb(173, 170, 170);
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(124,124,139,1) 95%);    position: fixed; */
+}
+@media screen and (max-width: 992px) { 
+    nav, .content{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px) { 
+    header, nav, .content{
+        flex-direction: column;
+    }
 }
