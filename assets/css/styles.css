@@ -21,11 +21,13 @@ body{
     flex-direction: column;
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 8%, rgba(143,143,143,1) 95%);
-
+}
+body h2, p{
+    color:white;
 }
 .content{
     margin-top: 305px;
-    border: solid 3px black;
+    border: solid 3px white;
     display:flex;
     flex-direction: row;
     justify-content:space-between;
@@ -33,16 +35,56 @@ body{
     border-radius: 5px;
 }
 .content h2{
-    text-align: center;;
+    text-align: center;
 }
 .about{
-    text-align:center;
-
+    margin-right: 25px;
 }
 .workpreview{
+    display:flex;
     height: 300px;
     width: 300px;
     border: solid grey 3px;
+}
+#calculator{
+    background:url("../calculator.png");
+    background-size: cover;
+    background-position: center;
+}
+#clock{
+    background:url("../clock.png");
+    background-size: cover;
+    background-position: center;
+}
+#puzzle{
+    background:url("../puzzle.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#trex{
+    background:url("../trexgame.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cal-title{
+    display:inline-block;
+    align-self: flex-end;
+    background-color: grey;
+}
+.clock-title{
+    display:inline-block;
+    align-self: flex-end;
+    background-color: grey;
+}
+.puzzle-title{
+    display:inline-block;
+    align-self: flex-end;
+    background-color: grey;
+}
+.trex-title{
+    display:inline-block;
+    align-self: flex-end;
+    background-color: grey;
 }
 .link{
 font-size: 20px;
@@ -65,5 +107,4 @@ display: inline;
 .content-title{
     background-color: rgb(173, 170, 170);
     /* background: linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(124,124,139,1) 95%);    position: fixed; */
-
 }
